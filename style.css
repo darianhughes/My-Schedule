@@ -13,7 +13,6 @@ html {
 
 body {
     background: #ccc;
-    margin: 30px 50px;
     line-height: 1.4;
 }
 
@@ -21,4 +20,70 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: right;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #154AE1;
+}
+
+.container{
+    display: grid;
+    grid-gap: 20px;
+    padding: 1.5rem
+}
+
+.minicontainer{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        'box1 box2'
+        'box3 box4';
+}
+
+.tinybox{
+    background: #ddd;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    padding: 1.5rem;
+}
+
+.tinybox:hover{
+    background-color: lightgray;
+}
+
+table th, td{
+    border: 1px solid;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    height: 30px;
+    width: 20px;
+    background-color:  #ddd;
 }
